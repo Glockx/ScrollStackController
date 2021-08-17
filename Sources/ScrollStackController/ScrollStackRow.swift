@@ -283,7 +283,7 @@ open class ScrollStackRow: UIView, UIGestureRecognizerDelegate {
         bottomConstraint.priority = UILayoutPriority(rawValue: UILayoutPriority.required.rawValue - 1)
 
         paddingConstraints = ConstraintsHolder(
-            top: contentView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor, constant: rowPadding.top),
+            top: contentView.topAnchor.constraint(equalTo: topAnchor, constant: rowPadding.top),
             bottom: bottomConstraint,
             left: contentView.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor, constant: rowPadding.left),
             right: contentView.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor, constant: rowPadding.right)
